@@ -59,6 +59,9 @@ function loadMoviesDetails(){
         })
     })
 }
+function limpiar(){
+    resultGrid.innerHTML=""
+}
 
 function displayMovieDetails(movieDetails, movieDetails1) {
     // Géneros
