@@ -326,11 +326,29 @@ ul, p {
         .container-search{
             top: 80px;
         } 
-        .container-title{
+        .wrapper{
+            flex-direction: column;
+            display: flex;
+            justify-content: space-between;
+        }
+        .container-search{
+            position: static;
+            transform: unset;
+            align-items: unset;
+        }
+    
+  }
+  @media(max-width: 900px){
+        .container-search
+        {
             position: absolute;
-            left: 50%;
             transform: translate(-50%);
-        } 
+            font-size: 30px;
+        }
+        .container-title{
+            align-items: center;
+            display: -webkit-inline-box;
+        }
   }
   @media(max-width: 450px){
     .logo p{
